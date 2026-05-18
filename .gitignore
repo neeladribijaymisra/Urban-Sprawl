@@ -1,0 +1,69 @@
+# Environment files
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+ml-api/.env
+ml-api/.env.*
+!ml-api/.env.example
+
+# Node / Vite frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# ASP.NET Core backend
+backend/bin/
+backend/obj/
+backend/TestResults/
+backend/.vs/
+backend/wwwroot/uploads/*
+!backend/wwwroot/uploads/.gitkeep
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Python / FastAPI ML API
+ml-api/venv/
+ml-api/.venv/
+ml-api/__pycache__/
+ml-api/.pytest_cache/
+ml-api/.mypy_cache/
+ml-api/.ruff_cache/
+ml-api/*.pyc
+ml-api/model/*.h5
+ml-api/model/*.keras
+ml-api/model/*.pt
+ml-api/model/*.onnx
+!ml-api/model/.gitkeep
+
+# Database and local data
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.mdf
+*.ldf
+
+# Logs
+logs/
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Coverage and reports
+coverage/
+frontend/coverage/
+backend/coverage/
+ml-api/htmlcov/
